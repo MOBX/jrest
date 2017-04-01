@@ -9,7 +9,7 @@ The HTTP verbs comprise a major portion of our “uniform interface” constrain
 #### Below is a table summarizing recommended return values of the primary HTTP methods in combination with the resource URIs:
 
 | HTTP Verb		| CRUD				| Entire Collection (e.g. /customers)															| Specific Item (e.g. /customers/{id}) 											| 
-| --------  	| ---------------: 	| --------------------------------------------------:  							                |--------------------------------------------------:  		                    |
+| :--------  	| :--------------- 	| :-------------------------------------------------- 							                | :--------------------------------------------------		                    |
 | POST			| Create			| 201 (Created), 'Location' header with link to /customers/{id} containing new ID.				| 404 (Not Found), 409 (Conflict) if resource already exists.. 					|
 | GET			| Read				| 200 (OK), list of customers. Use pagination, sorting and filtering to navigate big lists.		| 200 (OK), single customer. 404 (Not Found), if ID not found or invalid. 		|
 | PUT			| Update/Replace	| 404 (Not Found), unless you want to update/replace every resource in the entire collection.	| 200 (OK) or 204 (No Content). 404 (Not Found), if ID not found or invalid.	|
@@ -22,12 +22,12 @@ The HTTP verbs comprise a major portion of our “uniform interface” constrain
 This page is created from HTTP status code information found at [ietf.org]() and [Wikipedia](). Click on the `category heading` or the `status code` link to read more.
 
 | 1xx Informational											|   	 										|  											| 
-| ----------------------------------------------			| ----------------------------: 				|----------------------------: 				|
+| :----------------------------------------------			| :---------------------------- 				|:---------------------------- 				|
 | 100 Continue   											| 101 Switching Protocols   					| 102 Processing (WebDAV) 					| 
 
 
 | 2xx Success 												|   	 										|  											| 
-| ----------------------------------------------			| ----------------------------: 				|----------------------------: 				|
+| :----------------------------------------------			| :---------------------------- 				| :---------------------------- 			|
 | 200 OK   													| 201 Created   								| 202 Accepted 								| 
 | 203 Non-Authoritative Information     					| 204 No Content           						| 205 Reset Content 						| 
 | 206 Partial Content   									| 207 Multi-Status (WebDAV) 					| 208 Already Reported (WebDAV) 			| 
@@ -35,7 +35,7 @@ This page is created from HTTP status code information found at [ietf.org]() and
 
 
 | 3xx Redirection											| 												| 											| 
-| -----------------------									| -----: 										| ----: 									|
+| :----------------------------------------------			| :---------------------------- 				| :---------------------------- 			|
 | 300 Multiple Choices 										| 301 Moved Permanently  						| 302 Found 								| 
 | 303 See Other  											| 304 Not Modified   							| 305 Use Proxy 							| 
 | 306 (Unused)   											| 307 Temporary Redirect    					| 308 Permanent Redirect (experiemental) 	| 
@@ -43,7 +43,7 @@ This page is created from HTTP status code information found at [ietf.org]() and
 
 
 | 4xx Client Error                      					| 												| 											|
-| ----------------------------------------------			| ----------------------------: 				|----------------------------: 				|
+| :----------------------------------------------			| :---------------------------- 				|:---------------------------- 				|
 | 400 Bad Request  											| 401 Unauthorized  							| 402 Payment Required 						| 
 | 403 Forbidden 				 							| 404 Not Found   								| 405 Method Not Allowed 					| 
 | 406 Not Acceptable  										| 407 Proxy Authentication Required   			| 408 Request Timeout 						|
@@ -58,7 +58,7 @@ This page is created from HTTP status code information found at [ietf.org]() and
 
 
 | 5xx Server Error 											| 												| 											| 
-| ----------------------------------------------			| ----------------------------: 				|----------------------------: 				|
+| :----------------------------------------------			| :---------------------------- 				|:---------------------------- 				|
 | 500 Internal Server Error  								| 501 Not Implemented 							| 502 Bad Gateway							| 
 | 503 Service Unavailable  									| 504 Gateway Timeout   						| 505 HTTP Version Not Supported			| 
 | 506 Variant Also Negotiates (Experimental) 				| 507 Insufficient Storage (WebDAV)  			| 508 Loop Detected (WebDAV)				| 
