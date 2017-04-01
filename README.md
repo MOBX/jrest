@@ -64,3 +64,5 @@ This page is created from HTTP status code information found at [ietf.org]() and
 | 506 Variant Also Negotiates (Experimental) |  507 Insufficient Storage (WebDAV)  |  508 Loop Detected (WebDAV)| 
 | 509 Bandwidth Limit Exceeded (Apache)  |  510 Not Extended   | 511 Network Authentication Required| 
 | 598 Network read timeout error   | 599 Network connect timeout error| | 
+
+"`Top 10`" HTTP Status Code. More REST service-specific information is contained in the entry.
