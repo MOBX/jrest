@@ -57,7 +57,7 @@ This page is created from HTTP status code information found at [ietf.org]() and
 | 450 Blocked by Windows Parental Controls (Microsoft)   | 451 Unavailable For Legal Reasons    | 499 Client Closed Request (Nginx) | 
 
 
-| 5xx Server Error
+| 5xx Server Error| | | 
 | --------  | -----: | ----: |
 | 500 Internal Server Error  |  501 Not Implemented |   502 Bad Gateway| 
 | 503 Service Unavailable  | 504 Gateway Timeout   | 505 HTTP Version Not Supported| 
